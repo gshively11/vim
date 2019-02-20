@@ -47,3 +47,5 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+map ; :Files<CR>
+
