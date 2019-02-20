@@ -37,6 +37,9 @@ colorscheme solarized
 
 inoremap jk <ESC>
 let mapleader = ","
+let g:lightline = {
+  \ 'colorscheme': 'solarized',
+  \ }
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -48,4 +51,6 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 
 map ; :Files<CR>
+
+nnoremap <leader>nt :NERDTree<CR>
 

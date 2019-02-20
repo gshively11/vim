@@ -1,3 +1,12 @@
 [submodule "pack/my-plugins/start/fzf.vim"]
 	path = pack/my-plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "pack/my-plugins/start/lightline.vim"]
+	path = pack/my-plugins/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "pack/my-plugins/start/vim-multiple-cursors"]
+	path = pack/my-plugins/start/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
+[submodule "pack/my-plugins/start/nerdtree"]
+	path = pack/my-plugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
