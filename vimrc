@@ -29,8 +29,10 @@ set wrap
 set linebreak
 set nolist
 set spell spelllang=en_us
-set colorcolumn=80
+set colorcolumn=100
 set rtp+=/usr/local/opt/fzf
+set autoread
+set statusline+=%F
 
 set background=dark
 colorscheme solarized
@@ -39,7 +41,14 @@ inoremap jk <ESC>
 let mapleader = ","
 let g:lightline = {
   \ 'colorscheme': 'solarized',
+  \ 'component_function': {
+  \   'filename': 'LightlineFilename',
+  \ },
   \ }
+
+function! LightlineFilename()
+  return expand('%')
+endfunction
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -50,7 +59,24 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-map ; :Files<CR>
+nnoremap d "_d
+nnoremap D "_D
+vnoremap d "_d
 
+nmap ; :Files<CR>
+nmap <CR> i<CR><Esc>l
+nmap <C-h> 0
+nmap <C-l> $
+
+nnoremap <leader>q :q<CR>
 nnoremap <leader>nt :NERDTree<CR>
-
+nnoremap <leader>g :Rg<SPACE>
+nnoremap <leader>l :BLines<CR>
+nnoremap <leader>s :w<CR>
+nnoremap <leader>y "*y
+nnoremap <leader>p "*p
+vnoremap <leader>y "*y
+vnoremap <leader>p "*p
+nnoremap <leader>d ""d
+nnoremap <leader>D ""D
+vnoremap <leader>d ""d
