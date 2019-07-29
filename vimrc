@@ -50,6 +50,7 @@ function! LightlineFilename()
   return expand('%')
 endfunction
 
+"No arrow keys for navigation
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -59,24 +60,43 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+"d uses black hole register by default, leader d for original behavior 
 nnoremap d "_d
 nnoremap D "_D
 vnoremap d "_d
+nnoremap <leader>d ""d
+nnoremap <leader>D ""D
+vnoremap <leader>d ""d
 
+"fzf file search
 nmap ; :Files<CR>
+"enter will insert new lines in normal mode
 nmap <CR> i<CR><Esc>l
+"ctrl+h and ctrl+l for start/end of line
 nmap <C-h> 0
 nmap <C-l> $
+vmap <C-h> 0
+vmap <C-l> $
+"easier ex mode
+nmap <Space> :
 
+"easier quit
 nnoremap <leader>q :q<CR>
+"easier bd (close)
+nnoremap <leader>c :bd<CR>
 nnoremap <leader>nt :NERDTree<CR>
+"ripgrep search
 nnoremap <leader>g :Rg<SPACE>
 nnoremap <leader>l :BLines<CR>
+"easier save
 nnoremap <leader>s :w<CR>
+"copy/paste with clipboard
 nnoremap <leader>y "*y
 nnoremap <leader>p "*p
 vnoremap <leader>y "*y
 vnoremap <leader>p "*p
-nnoremap <leader>d ""d
-nnoremap <leader>D ""D
-vnoremap <leader>d ""d
+nnoremap <leader>m :noh<CR>
+
+"run flake8 when writing python files
+autocmd BufWritePost *.py call flake8#Flake8()
+
