@@ -16,3 +16,6 @@
 [submodule "pack/my-plugins/start/vim-jsx"]
 	path = pack/my-plugins/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx
+[submodule "pack/my-plugins/start/vim-flake8"]
+	path = pack/my-plugins/start/vim-flake8
+	url = git@github.com:nvie/vim-flake8.git
