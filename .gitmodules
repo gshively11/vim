@@ -19,3 +19,9 @@
 [submodule "pack/my-plugins/start/vim-flake8"]
 	path = pack/my-plugins/start/vim-flake8
 	url = git@github.com:nvie/vim-flake8.git
+[submodule "pack/my-plugins/start/vim-commentary"]
+	path = pack/my-plugins/start/vim-commentary
+	url = git@github.com:tpope/vim-commentary
+[submodule "pack/my-plugins/start/vim-visual-multi"]
+	path = pack/my-plugins/start/vim-visual-multi
+	url = git@github.com:mg979/vim-visual-multi

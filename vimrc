@@ -100,3 +100,10 @@ nnoremap <leader>m :noh<CR>
 "run flake8 when writing python files
 autocmd BufWritePost *.py call flake8#Flake8()
 
+"ALE linter config
+let g:ale_fixers = {
+  \ 'ruby': ['rubocop', 'trim_whitespace', 'remove_trailing_lines']
+  \ }
+let g:ale_ruby_rubocop_options = '--auto-correct'
+let g:ale_fix_on_save = 1
+let g:ale_lint_on_save = 1
