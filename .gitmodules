@@ -4,9 +4,6 @@
 [submodule "pack/my-plugins/start/lightline.vim"]
 	path = pack/my-plugins/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
-[submodule "pack/my-plugins/start/vim-multiple-cursors"]
-	path = pack/my-plugins/start/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors
 [submodule "pack/my-plugins/start/nerdtree"]
 	path = pack/my-plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
@@ -25,3 +22,6 @@
 [submodule "pack/my-plugins/start/vim-visual-multi"]
 	path = pack/my-plugins/start/vim-visual-multi
 	url = git@github.com:mg979/vim-visual-multi
+[submodule "pack/my-plugins/start/ale"]
+	path = pack/my-plugins/start/ale
+	url = git@github.com:dense-analysis/ale
